@@ -77,6 +77,9 @@ namespace APRaycaster
 		friend Vector operator* (const Scalar K, Vector A);
 		friend Vector operator/ (Vector A, const Scalar K);
 		friend Vector operator/ (const Scalar K, Vector A);
+
+		friend bool operator== (const Vector& InA, const Vector& InB);
+		friend bool operator!= (const Vector& InA, const Vector& InB);
 		// Operators overload End
 
 

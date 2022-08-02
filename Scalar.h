@@ -2,4 +2,7 @@
 
 #pragma once
 
-using Scalar = float;
+namespace APRaycaster
+{
+	using Scalar = float;
+}
