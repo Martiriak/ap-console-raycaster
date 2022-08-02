@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Capsule.cpp" />
     <ClCompile Include="Console Raycaster.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="Ray.cpp" />
@@ -146,9 +147,11 @@
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Capsule.h" />
     <ClInclude Include="Plane.h" />
     <ClInclude Include="Ray.h" />
     <ClInclude Include="Scalar.h" />
+    <ClInclude Include="Shapes.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
