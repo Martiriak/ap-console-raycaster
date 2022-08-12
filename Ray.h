@@ -41,4 +41,15 @@ namespace APRaycaster
 		Vector mOrigin;
 		Vector mDirection;
 	};
+
+	struct Sphere;
+	struct Capsule;
+	class Plane;
+
+	bool Raycast(const Vector& InOrigin, const Vector& InDirection, const Plane& InPlane, Vector& OutHitPoint, Vector& OutHitNorm, Scalar& OutDistance);
+	bool Raycast(const Vector& InOrigin, const Vector& InDirection, const Capsule& InCapsule, Vector& OutHitPoint, Vector& OutHitNorm, Scalar& OutDistance);
+	bool Raycast(const Vector& InOrigin, const Vector& InDirection, const Sphere& InSphere, Vector& OutHitPoint, Vector& OutHitNorm, Scalar& OutDistance);
+	bool Raycast(const Ray& InRay, const Plane& InPlane, Vector& OutHitPoint, Vector& OutHitNorm, Scalar& OutDistance);
+	bool Raycast(const Ray& InRay, const Capsule& InCapsule, Vector& OutHitPoint, Vector& OutHitNorm, Scalar& OutDistance);
+	bool Raycast(const Ray& InRay, const Sphere& InSphere, Vector& OutHitPoint, Vector& OutHitNorm, Scalar& OutDistance);
 }

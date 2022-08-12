@@ -16,6 +16,7 @@ namespace APRaycaster
 		inline Plane(const Plane& InToCopy) : mNormal(InToCopy.mNormal), mK(InToCopy.mK) { }
 
 		inline Vector GetPlaneNormal() const { return mNormal; }
+		inline Scalar GetPlaneCoefficent() const { return mK; }
 
 		inline void ChangePlaneLocation(const Vector& Point) { mK = -Vector::Dot(mNormal, Point); }
 
